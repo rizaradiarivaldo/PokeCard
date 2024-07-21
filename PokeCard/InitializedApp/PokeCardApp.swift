@@ -11,7 +11,9 @@ import SwiftUI
 struct PokeCardApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                MainApp()
+            }
         }
     }
 }
