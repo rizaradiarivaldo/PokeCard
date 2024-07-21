@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct DetailHeroView: View {
+    var hero: DotaHeroesModel?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(hero?.localizedName ?? "")
+        }
     }
 }
 
